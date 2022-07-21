@@ -55,5 +55,16 @@
   "bugs": {
     "url": "https://github.com/AaronWatters/hello_jest/issues"
   },
-  "homepage": "https://github.com/AaronWatters/hello_jest#readme"
+  "homepage": "https://github.com/AaronWatters/hello_jest#readme",
+  "name": "continuous-test-code-coverage-guide",
+  "scripts": {
+    "start": "webpack",
+    "test": "jest  --coverage --coverageDirectory=."
+  },
+   "jest": {
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ]
+   }
 }
